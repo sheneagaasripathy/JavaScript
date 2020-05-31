@@ -1,0 +1,90 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title> Java Script </title>
+    </head>
+    <body>
+    <h1 style="text-align:center"> Java script Assigment </h1>
+
+
+    <p>1. Write the function to calculate  a number’s square?</p>
+    <p id="squ"></p>
+    <p>2.a. Write a function to add these two numbers and  name the function as addNum.</p>
+    <p id="plus"></p>
+    <p>2.b. Write a function to multiply these two numbers and  name the function as multiNum.</p>
+    <p id="into"></p>
+    <p>2.c. Write a function to subtract these two numbers and  name the function as subtractNum.</p>
+    <p id="minus"></p>
+    <P>2.d. Write a function to divide these two numbers and  name the function as divideNum.</P>
+    <p id="divi"></p>
+    <p>3. Write a function to print “Hello World” in an alert ?</p>
+    <button onclick="hi()">Click To  Alert</button>
+    <p>4. Write a function to calculate the volume of a cuboid   (Volume=length*width*height)?</p>
+    <p id="vol"></p>
+    <p>5. Create a object (firstName - Nimal , lastName - Raj, age - 15, city - Kandy) and assign it to a variable named person. Write the JS code to have the following output?</p>
+    <p id="divie"></p>
+    <p>6. Create a object ( courseName- BIT, courseFee- Rs 150 000, startDate- 12.06.2018, center- Our Office) and assign it to a variable named course. Write the JS code to have the following output?</p>
+    <p id="cou"></p>
+
+
+    <script>
+      //Write the function to calculate  a number’s square?
+      function square(num){
+        return num*num;
+      }
+      document.getElementById("squ").innerHTML = square(6);
+      //Declare 2 variables
+      var num1 = 6, num2 = 2;
+      // the function as addNum.
+      function addNum(){
+        return num1 + num2;
+      }
+      // the function as multiNum.
+      function multiNum(){
+        return num1 * num2;
+      }
+      // the function as subtractNum.
+      function subtractNum(){
+        return num1 - num2;
+      }
+      // the function as divideNum.
+      function divideNum(){
+        return num1/num2;
+        }
+              //The addition of the two numbers is output
+      document.getElementById("plus").innerHTML = "The addition of the two numbers is " + addNum();
+        //The multiplication of the two numbers is output
+      document.getElementById("into").innerHTML = "The multiplication of the two numbers is " + multiNum();
+        //The subtraction of the two numbers is output
+      document.getElementById("minus").innerHTML = "The subtraction of the two numbers is " + subtractNum();
+        //The division of the two numbers is output
+      document.getElementById("divi").innerHTML = "The division of the two numbers is " + divideNum();
+        //  “Hello World”  alert ?
+      function hi(){
+        window.alert("Hello World");
+      }
+      // function to calculate the volume of a cuboid   (Volume=length*width,*height)?
+      function vol_cuboid(len,wid,heig){
+        var Volume=len*wid*heig;
+        return Volume;
+      }
+      document.getElementById("vol").innerHTML ="volume is: " + vol_cuboid(6,2,1);
+      /*
+        Output:
+        My name is Nimal Raj. I’m 15 years old.I live in Kandy.
+      */
+      var person={firstName:"Nimal",lastName:"Raj",age:15,city:"Kandy"}
+      document.getElementById("divie").innerHTML ="My name is " + person.firstName + " " + person.lastName +". I'm" + person.age + "years old. I live in" + person.city + ".";
+      /*
+        Output:
+        Course Name: BIT
+        Course Fee: Rs 150 000
+        Start Date: 12.06.2018
+        Center: Our Office
+      */
+      var course = {courseName:"BIT",courseFee:"Rs 150 000",startDate:"12.06.2018",center:"our Office"}
+      document.getElementById("cou").innerHTML ="course Name: " + course.courseName + "<br>" + "course Fee: " + course.courseFee + "<br>" + "Start Date: " + course.startDate + "<br>" + "center: " + course.center;
+    </script>
+</body>
+</html>
